@@ -1,4 +1,7 @@
+import 'package:ecommerce_app/pages/auth/LoginOnRegister.dart';
 import 'package:ecommerce_app/pages/auth/login.dart';
+import 'package:ecommerce_app/pages/auth/register.dart';
+import 'package:ecommerce_app/pages/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -10,8 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Login(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
